@@ -1,0 +1,110 @@
+/* Write your CSS here */
+h1{
+    text-align: center;
+}
+h1+p{
+    text-align: center;
+}
+
+#doctors {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+   
+}
+#doctors>div{
+    box-shadow: 0 0 10px black;
+    text-align: center;
+}
+
+#doctors div h3{
+    margin-top: -1px;
+}
+#doctors div h6{
+    margin-top: -8px;
+}
+#doctors div img{
+    width: 100%;
+}
+
+.buttons-div{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.buttons-div button:first-child{
+    background-color: rgb(218, 218, 218);
+    border: none;
+    color: blue;
+    padding: 10px;
+    border-radius:10px;
+}
+.buttons-div button:last-child{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#service{
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+    
+}
+#service div{
+    text-align: center;
+}
+/* Media queries should be at bottom only */
+/* Medium screens */
+@media all and (min-width: 451px) and (max-width: 750px) {
+
+    #doctors {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:20px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+       
+    }
+
+    #service{
+   
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+        gap: 20px;
+        
+    }
+}
+/* Small screens */
+@media all and (min-width: 100px) and (max-width: 450px) {
+    #doctors {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:20px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+       
+    }
+
+    #service{
+   
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+        gap: 20px;
+        
+    }
+}

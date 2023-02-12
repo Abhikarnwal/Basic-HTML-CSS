@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+#container div{
+
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#container div :first-child{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+button {
+
+    padding: 5px 10px;
+    background-color: brown;
+    color: aliceblue;
+    font-size: 20px;
+}
